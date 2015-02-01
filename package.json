@@ -13,5 +13,10 @@
     "gulp-6to5": "^3.0.0",
     "power-assert": "^0.10.1",
     "styledown": "^1.0.2"
+  },
+  "dependencies": {
+    "jade": "^1.9.1",
+    "postcss": "^4.0.3",
+    "uniq": "^1.0.1"
   }
 }

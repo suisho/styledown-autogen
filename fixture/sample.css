@@ -1,0 +1,24 @@
+.sample-red.is-light {
+  color : pink;
+}
+
+.sample-red.is-dark {
+  background : black;
+}
+
+.sample-red,
+.sample-green{
+  background : black;
+}
+  
+.sample-red{
+  color : red;
+}
+
+.sample-green{
+  color: green;
+}
+
+.blue{
+  color : blue;
+}
