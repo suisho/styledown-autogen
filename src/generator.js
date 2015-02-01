@@ -1,16 +1,7 @@
 var util = require("util")
-var uniq = require("uniq")
 var jade = require("jade")
 var convert = require("./convert")
 var Selector = require("./selector")
-
-var Generator = function(name, description, css, pattern, template){
-  this.name = name
-  this.description = description
-  this.css = css
-  this.matcher = matcherFunc(pattern)
-  this.template = template
-}
 
 function matcherFunc(pattern){
   if(typeof pattern === "function"){
@@ -20,6 +11,14 @@ function matcherFunc(pattern){
     return selector.match(pattern)
   }
   return func
+}
+
+var Generator = function(name, description, css, pattern, template){
+  this.name = name
+  this.description = description
+  this.css = css
+  this.matcher = matcherFunc(pattern)
+  this.template = template
 }
 
 Generator.prototype.compile = function(template, selector){
