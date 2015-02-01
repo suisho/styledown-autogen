@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "_test": "mocha --compilers js:6to5/register",
+    "test": "mocha "
   },
   "author": "",
   "license": "ISC",
